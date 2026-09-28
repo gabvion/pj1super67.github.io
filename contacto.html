@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Formulario de contacto de Super 67">
+    <title>Contacto | Super 67</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <div class="aviso">Tu mercado de todos los días <span>·</span> Frescura y ahorro cerca de ti</div>
+    <header class="cabecera">
+      <div class="contenedor barra">
+        <a class="marca" href="index.html" aria-label="Super 67, ir al inicio"><span class="marca-icono" aria-hidden="true">67</span><span>SUPER<span class="marca-resalte">67</span><small>EL MERCADO DE TU BARRIO</small></span></a>
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="ofertas.html">Ofertas</a>
+            </li>
+            <li>
+              <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="contacto.html" aria-current="page">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <div class="pagina-cabeza">
+        <div class="contenedor">
+          <span class="sobrelinea">ESTAMOS PARA AYUDARTE</span>
+          <h1>Contacto</h1>
+          <p>Cuéntanos qué producto buscas o déjanos una sugerencia.</p>
+        </div>
+      </div>
+      <section class="contenedor seccion contacto-grid">
+        <div>
+          <span class="sobrelinea verde">HABLEMOS</span>
+          <h2>Queremos escucharte</h2>
+          <p>Completa el formulario con tu consulta. Es una demostración académica: los datos no se envían ni se guardan porque todavía no existe un servidor o base de datos.</p>
+          <aside class="tarjeta-info">
+            <h3>¿Qué puedes consultar?</h3>
+            <p>Productos, categorías, sugerencias y dudas generales sobre el supermercado.</p>
+          </aside>
+        </div>
+        <form class="formulario" action="contacto.html" method="get">
+          <div class="dos-campos">
+            <div>
+              <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input id="correo" name="correo" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <label for="asunto">Asunto <span aria-hidden="true">*</span></label>
+          <select id="asunto" name="asunto" required="">
+            <option value="">Selecciona una opción</option>
+            <option value="producto">Consulta sobre productos</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="otro">Otro</option>
+          </select>
+          <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+          <textarea id="mensaje" name="mensaje" rows="6" minlength="10" required placeholder="Escribe tu mensaje aquí"></textarea>
+          <p class="nota">* Campos obligatorios. El botón muestra el funcionamiento visual del formulario; el envío real requiere conectar un servicio.</p>
+          <button class="boton boton-oscuro" type="submit">Probar formulario →</button>
+        </form>
+      </section>
+    </main>
+    <footer class="pie">
+      <div class="contenedor pie-grid">
+        <section>
+          <a class="marca marca-pie" href="index.html"><span class="marca-icono" aria-hidden="true">67</span><span>SUPER<span class="marca-resalte">67</span></span></a>
+          <p>Una opción sencilla para encontrar lo que necesitas cada día.</p>
+          <nav class="redes-sociales" aria-label="Redes sociales">
+            <h2>Redes sociales</h2>
+            <!-- Sustituir estos enlaces generales por los perfiles reales de Super 67. -->
+            <ul>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span class="solo-lectores">(abre en otra pestaña)</span></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook <span class="solo-lectores">(abre en otra pestaña)</span></a></li>
+              <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok <span class="solo-lectores">(abre en otra pestaña)</span></a></li>
+            </ul>
+            <p class="redes-nota">Perfiles de Super 67 próximamente.</p>
+          </nav>
+        </section>
+        <section>
+          <h2>Explora</h2>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="ofertas.html">Ofertas</a>
+            </li>
+            <li>
+              <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Información</h2>
+          <p>Precios de ejemplo para este proyecto académico. Consulta disponibilidad en tienda.</p>
+          <p>¿Tienes alguna duda? <a href="contacto.html">Escríbenos</a>.</p>
+        </section>
+      </div>
+      <div class="contenedor pie-final">© 2026 Super 67 · Proyecto académico de supermercado</div>
+    </footer>
+  </body>
+</html>
